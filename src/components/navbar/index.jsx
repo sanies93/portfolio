@@ -10,24 +10,40 @@ import './style.css';
 class Navbar extends React.Component {
     render() {
         return (
-            <div>
-                <Nav className="navbar justify-content-center" activeKey="#home">
-                    <Nav.Item>
-                        <Nav.Link className="navbar-link" href="#home">HOME</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link className="navbar-link" href="#about">ABOUT</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link className="navbar-link" href="#skills">SKILLS</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link className="navbar-link" href="#projects">PROJECTS</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link className="navbar-link" href="#contact">CONTACT</Nav.Link>
-                    </Nav.Item>
-                </Nav>
+            // <div>
+            //     <Nav className="navbar justify-content-center" activeKey="#home">
+            //         <Nav.Item>
+            //             <Nav.Link className="navbar-link" href="#home">HOME</Nav.Link>
+            //         </Nav.Item>
+            //         <Nav.Item>
+            //             <Nav.Link className="navbar-link" href="#about">ABOUT</Nav.Link>
+            //         </Nav.Item>
+            //         <Nav.Item>
+            //             <Nav.Link className="navbar-link" href="#skills">SKILLS</Nav.Link>
+            //         </Nav.Item>
+            //         <Nav.Item>
+            //             <Nav.Link className="navbar-link" href="#projects">PROJECTS</Nav.Link>
+            //         </Nav.Item>
+            //         <Nav.Item>
+            //             <Nav.Link className="navbar-link" href="#contact">CONTACT</Nav.Link>
+            //         </Nav.Item>
+            //     </Nav>
+            // </div>
+            <div className="menu">
+                <ul>
+                    <li>
+                        <a href="#home" className="active">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projects">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         )
     }

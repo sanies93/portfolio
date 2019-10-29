@@ -1,5 +1,15 @@
-/* .App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* .menu {
+  display: block;
+  width: 100%
+}
+
+ul {
+  list-style: none;
+  display: inline;
+  color: #898989;
+}
+
+li {
+  display: block;
+  color: #898989;
 } */

@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { Nav } from 'react-bootstrap';
 import Navbar from './components/navbar/index';
-import Header from './components/header/index';
+import Landing from './components/header/index';
 import About from './components/about/index';
 import './App.css';
 
 // const SEL = 'custom-section';
 // const SECTION_SEL = `.${SEL}`;
 
-// const originalColors = ['#ff5f45', '#0798ec', '#fc6c7c', '#435b71', 'orange', 'blue', 'purple', 'yellow'];
+// const originalColors = ["#000000", "#FFFFFF", "#FBA9A6"];
 
 // class App extends React.Component {
 //   constructor(props) {
@@ -17,13 +18,13 @@ import './App.css';
 //       sectionsColor: [...originalColors],
 //       fullpages: [
 //         {
-//           text: 'Section 1',
+//           section: <Header />,
 //         },
 //         {
-//           text: 'Section 2',
+//           section: <About/>,
 //         },
 //         {
-//           text: 'Section 3',
+//           section: 'Section 3',
 //         }
 //       ],
 //     };
@@ -45,9 +46,9 @@ import './App.css';
 
 //           render={comp => (
 //             <ReactFullpage.Wrapper>
-//               {fullpages.map(({ text }) => (
-//                 <div key={text} className={SEL}>
-//                   <h1>{text}</h1>
+//               {fullpages.map(({ section }) => (
+//                 <div key={section} className={SEL}>
+//                   <h1>{section}</h1>
 //                 </div>
 //               ))}
 //             </ReactFullpage.Wrapper>
@@ -58,54 +59,51 @@ import './App.css';
 //   }
 // }
 
+const Menu = () => (
+  <div
+    className="menu"
+    style={{
+      position: 'fixed',
+      top: 0,
+      zIndex: 100,
+    }}
+  >
+    <ul class="actions">
+      <li>
+        <a href="#home">HOME</a>
+      </li>
+      <li>
+        <a href="#about">ABOUT</a>
+      </li>
+      <li>
+        <a href="#projects">PROJECTS</a>
+      </li>
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+);
+
 const App = () => (
-  // <Navbar />
   <ReactFullpage
     //fullpage options
     licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
     navigation
     scrollingSpeed={1000} /* Options here */
-    // anchors={["firstPage", "secondPage", "thirdPage"]}
+    anchors={["home", "about", "projects", "contact"]}
     sectionsColor={["#000000", "#FFFFFF", "#FBA9A6"]}
 
     render={({ state, fullpageApi }) => {
-      // const Menu = () => (
-      //   <div
-      //     className="menu"
-      //     style={{
-      //       position: 'fixed',
-      //       top: 0,
-      //       zIndex: 100,
-      //     }}
-      //   >
-      //     <ul class="actions">
-      //       <li>
-      //         <button onClick={() => this.handleAddSection()}>Add Section</button>
-      //         <button onClick={() => this.handleRemoveSection()}>
-      //           Remove Section
-      //         </button>
-      //         <button onClick={() => this.handleChangeColors()}>
-      //           Change background colors
-      //         </button>
-      //         <button onClick={() => this.moveSectionDown()}>
-      //           Move Section Down
-      //         </button>
-      //       </li>
-      //     </ul>
-      //   </div>
-      // );
-
       return (
         <div className="App">
+          <Navbar />
           <ReactFullpage.Wrapper>
             <div className="section">
-              <Header />
-              {/* <button onClick = {() => fullpageApi.moveSectionDown()}>
-            Click me to move fown
-          </button> */}
+              <Landing />
             </div>
             <div className="section">
-              <About />
+              <About className="about" />
             </div>
             <div className="section">
               <div className="slide">
@@ -124,15 +122,5 @@ const App = () => (
     }}
   />
 );
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Navbar />
-//       <div><Header /></div>
-//       <div><About /></div>
-//     </div>
-//   );
-// }
 
 export default App;

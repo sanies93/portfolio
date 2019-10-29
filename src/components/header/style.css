@@ -66,3 +66,11 @@ html, body {
         margin-bottom: -40px;
     }
 }
+
+li.links {
+    font-size: 50px;
+}
+
+a.icons {
+    padding: 20px;
+}
