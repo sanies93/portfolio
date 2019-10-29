@@ -1,17 +1,14 @@
 import React from 'react';
-import Navbar from '../navbar/index';
 import './style.css';
 
 class About extends React.Component {
     render() {
         return (
-            <div>
-                <Navbar />
+            <section id="about">
                 <div className="container">
-                    <span className="text1">Sahra Anies</span>
-                    <span className="text2">Web Developer</span>
+                    <h1>My name is Sahra Anies.</h1>
                 </div>
-            </div>
+            </section>
         )
     }
 }

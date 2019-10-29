@@ -11,9 +11,9 @@ class Navbar extends React.Component {
     render() {
         return (
             <div>
-                <Nav className="navbar justify-content-center" activeKey="/home">
+                <Nav className="navbar justify-content-center" activeKey="#home">
                     <Nav.Item>
-                        <Nav.Link className="navbar-link" href="/home">HOME</Nav.Link>
+                        <Nav.Link className="navbar-link" href="#home">HOME</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link className="navbar-link" href="#about">ABOUT</Nav.Link>
