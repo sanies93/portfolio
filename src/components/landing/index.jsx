@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
-import Navbar from '../navbar/index';
 import './style.css';
 
 class Landing extends React.Component {
@@ -16,6 +15,6 @@ class Landing extends React.Component {
             </div>
         )
     }
-}
+} 
 
 export default Landing;
