@@ -311,109 +311,112 @@ import './style.css';
 //     }
 // }
 
-class Project1 extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            isFlipped: false
-        };
-        this.handleClick = this.handleClick.bind(this);
-    }
+// class Project1 extends React.Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             isFlipped: false
+//         };
+//         this.handleClick = this.handleClick.bind(this);
+//     }
 
-    handleClick(e) {
-        e.preventDefault();
-        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-    }
-    render() {
-        return (
-            <div>
-                <Card key={this.props.key} style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
-                        <button onClick={this.handleClick}>Click to flip</button>
-                    </Card.Body>
-                </Card>
-            </div>
-        )
-    }
-}
+//     handleClick(e) {
+//         e.preventDefault();
+//         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+//     }
+//     render() {
+//         return (
+//             <div>
+//                 <Card key={this.props.key} style={{ width: '18rem' }}>
+//                     <Card.Body>
+//                         <Card.Title>Card Title</Card.Title>
+//                         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+//                         <Card.Text>
+//                             Some quick example text to build on the card title and make up the bulk of
+//                             the card's content.
+//                         </Card.Text>
+//                         <Card.Link href="#">Card Link</Card.Link>
+//                         <Card.Link href="#">Another Link</Card.Link>
+//                         <button onClick={this.handleClick}>Click to flip</button>
+//                     </Card.Body>
+//                 </Card>
+//             </div>
+//         )
+//     }
+// }
 
-class Project2 extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            isFlipped: false
-        };
-        this.handleClick = this.handleClick.bind(this);
-    }
+// class Project2 extends React.Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             isFlipped: false
+//         };
+//         this.handleClick = this.handleClick.bind(this);
+//     }
 
-    handleClick(e) {
-        e.preventDefault();
-        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-    }
-    render() {
-        return (
-            <div>
-                <Card key={this.props.key} style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Back</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
-                        <button onClick={this.handleClick}>Click to flip</button>
-                    </Card.Body>
-                </Card>
-            </div>
-        )
-    }
-}
+//     handleClick(e) {
+//         e.preventDefault();
+//         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+//     }
+//     render() {
+//         return (
+//             <div>
+//                 <Card key={this.props.key} style={{ width: '18rem' }}>
+//                     <Card.Body>
+//                         <Card.Title>Back</Card.Title>
+//                         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+//                         <Card.Text>
+//                             Some quick example text to build on the card title and make up the bulk of
+//                             the card's content.
+//                         </Card.Text>
+//                         <Card.Link href="#">Card Link</Card.Link>
+//                         <Card.Link href="#">Another Link</Card.Link>
+//                         <button onClick={this.handleClick}>Click to flip</button>
+//                     </Card.Body>
+//                 </Card>
+//             </div>
+//         )
+//     }
+// }
 
-class Image1 extends React.Component {
-    render() {
-        return (
-            <img key={this.props.key} src="http://images.clipartpanda.com/apple-20clip-20art-nicubunu_Apple_Clipart_Free.png" />
-        )
-    }
-}
+// class Image1 extends React.Component {
+//     render() {
+//         return (
+//             <img key={this.props.key} src="http://images.clipartpanda.com/apple-20clip-20art-nicubunu_Apple_Clipart_Free.png" />
+//         )
+//     }
+// }
 
 class Projects1 extends React.Component {
     render() {
         return (
-            <div id="projectsContainer">
-                <Card className="projectcard">
-                    <Card.Body>
-                        <Card.Img src={image1}></Card.Img>
-                        <Card.Title>UniBuddy</Card.Title>
-                        <Card.Link href="https://sanies93.github.io/uniBuddy/" target="_blank">Demo</Card.Link>
-                    </Card.Body>
-                </Card>
+            <div>
+                <div id="projectsection">My Work</div>
+                <div id="projectsContainer">
+                    <Card className="projectcard">
+                        <Card.Body>
+                            <Card.Img src={image1}></Card.Img>
+                            <Card.Title>UniBuddy</Card.Title>
+                            <Card.Link href="https://sanies93.github.io/uniBuddy/" target="_blank">Demo</Card.Link>
+                        </Card.Body>
+                    </Card>
 
-                <Card className="projectcard">
-                    <Card.Body>
-                        <Card.Img src={image2}></Card.Img>
-                        <Card.Title>Magic Bingo</Card.Title>
-                        <Card.Link href="https://salty-beach-85906.herokuapp.com/game" target="_blank">Demo</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Card className="projectcard">
+                        <Card.Body>
+                            <Card.Img src={image2}></Card.Img>
+                            <Card.Title>Magic Bingo</Card.Title>
+                            <Card.Link href="https://salty-beach-85906.herokuapp.com/game" target="_blank">Demo</Card.Link>
+                        </Card.Body>
+                    </Card>
 
-                <Card className="projectcard">
-                    <Card.Body>
-                        <Card.Img src={image3}></Card.Img>
-                        <Card.Title>Clicky Game</Card.Title>
-                        <Card.Link href="https://aqueous-oasis-71382.herokuapp.com/" target="_blank">Demo</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Card className="projectcard">
+                        <Card.Body>
+                            <Card.Img src={image3}></Card.Img>
+                            <Card.Title>Clicky Game</Card.Title>
+                            <Card.Link href="https://aqueous-oasis-71382.herokuapp.com/" target="_blank">Demo</Card.Link>
+                        </Card.Body>
+                    </Card>
+                </div>
             </div>
         )
     }

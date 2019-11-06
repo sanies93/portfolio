@@ -6,6 +6,7 @@ import About from './components/about/index';
 import Projects1 from './components/projects/index';
 import Projects2 from './components/projects/index2';
 import Projects3 from './components/projects/index3';
+import Contact from './components/contact/index';
 import './App.css';
 
 const App = () => (
@@ -17,7 +18,7 @@ const App = () => (
       navigation
       scrollingSpeed={1000}
       anchors={["home", "about", "projects", "contact"]}
-      sectionsColor={["#000000", "#FFFFFF", "#FBA9A6"]}
+      sectionsColor={["#000000", "#FFFFFF", "rgb(265, 190, 190)"]}
 
       render={({ state, fullpageApi }) => {
         return (
@@ -39,6 +40,9 @@ const App = () => (
                 <div className="slide">
                   <h3><Projects3 /></h3>
                 </div>
+              </div>
+              <div className="section">
+                <Contact />
               </div>
             </ReactFullpage.Wrapper>
           </div>

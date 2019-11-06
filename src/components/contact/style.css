@@ -1,0 +1,37 @@
+#contactsection {
+    font-family: 'Spirax', cursive;
+    font-size: 72px;
+    color: #FBA9A6;
+    text-align: center;
+    /* padding-bottom: 20px; */
+}
+
+#contactsummary {
+    font-size: 22px;
+    color: white;
+}
+
+#mail {
+    font-family:'Vanity, Arial, sans-serif';
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: line-through;
+    text-decoration-color: #FBA9A6;
+}
+
+#mail:hover {
+    color: #FBA9A6;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    text-align:center;
+    font-family: 'Volkhov', serif;
+    color: white;
+    width: 100%;
+}
