@@ -1,10 +1,6 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import ReactCardFlip from 'react-card-flip';
 import Card from 'react-bootstrap/Card';
-// import image from './img/';
 import image1 from './img/unibuddy.gif';
 import image2 from './img/mb.gif';
 import image3 from './img/clicky.gif';
@@ -391,7 +387,7 @@ class Image1 extends React.Component {
     }
 }
 
-export default class Projects extends React.Component {
+class Projects1 extends React.Component {
     render() {
         return (
             <div id="projectsContainer">
@@ -423,5 +419,4 @@ export default class Projects extends React.Component {
     }
 }
 
-
-// export default Projects;
+export default Projects1;

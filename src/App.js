@@ -3,7 +3,9 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Navbar from './components/navbar/index';
 import Landing from './components/landing/index';
 import About from './components/about/index';
-import Projects from './components/projects/index';
+import Projects1 from './components/projects/index';
+import Projects2 from './components/projects/index2';
+import Projects3 from './components/projects/index3';
 import './App.css';
 
 const App = () => (
@@ -29,13 +31,13 @@ const App = () => (
               </div>
               <div className="section">
                 <div className="slide">
-                  <h3><Projects /></h3>
+                  <h3><Projects1 /></h3>
                 </div>
                 <div className="slide">
-                  <h3>Slide 2.2</h3>
+                  <h3><Projects2 /></h3>
                 </div>
                 <div className="slide">
-                  <h3>Slide 2.3</h3>
+                  <h3><Projects3 /></h3>
                 </div>
               </div>
             </ReactFullpage.Wrapper>
