@@ -1,2 +1,39 @@
+#aboutContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-   
+.imageCol {
+    background-color: #cfcfcf;
+    opacity: 0.9;
+    padding: 20px;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+}
+
+#aboutImage {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+}
+
+#aboutme {
+    font-family: 'Spirax', cursive;
+    font-size: 72px;
+    color: #FBA9A6;
+}
+
+p {
+    font-family: 'Volkhov', serif;
+    font-size: 18px;
+}
+
+#skills {
+    font-family: 'Spirax', cursive;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.skills {
+    font-size: 40px;
+    color: #898989;
+}
